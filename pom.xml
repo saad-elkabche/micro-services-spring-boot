@@ -13,6 +13,7 @@
       <module>categories</module>
     <module>eureka-server</module>
       <module>gateway</module>
+      <module>authentication</module>
   </modules>
 
   <name>microservices</name>

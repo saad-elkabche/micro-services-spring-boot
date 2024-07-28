@@ -8,11 +8,21 @@ spring:
           predicates:
             - Path=/api/v1/products/**
           uri: lb://PRODUCTS
+          filters:
+            - AuthenticationFilter
 
         - id: categories
           predicates:
             - Path=/api/v1/categories/**
           uri: lb://CATEGORIES
+          filters:
+            - AuthenticationFilter
+
+
+        - id: auth
+          predicates:
+            - Path=/auth/**
+          uri: lb://AUTHENTICATION
 server:
   port : 8080
 

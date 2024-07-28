@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="gateway" />
         <module name="products" />
+        <module name="authentication" />
       </profile>
     </annotationProcessing>
   </component>
